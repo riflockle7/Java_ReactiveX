@@ -23,7 +23,7 @@
   > 3. 메인스레드가 멈추거나 느려지지 않도록 하여, 사용자들에게 부드러운 사용자 경험과 좋은 성능을 제공하고 싶다.
 
 ### 모든 비동기작업을 처리하는 라이브러리에서 필요한 것 (평가 매트릭스)
-![image](../res/evaluation_matrix.png)
+![image](https://github.com/ridickle7/Java_ReactiveX/blob/master/src/main/java/_step01/res/evaluation_matrix.png?raw=true)
 - 명시적 실행 (Explicit execution)
   > 새로운 스레드에서 작업을 시작하면, 그것을 **컨트롤할 수 있어야 한다.**  
   > 백그라운드 작업을 수행하려면, 정보를 모으고 준비해야 한다.  
