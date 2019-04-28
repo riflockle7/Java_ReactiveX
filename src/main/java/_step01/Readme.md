@@ -56,8 +56,6 @@ Observable.just("doc1", "doc2", "doc3").subscribe(System.out::println);
 </code></pre>
 
 
-ref
-- 
+### ref
 - [대한민국 개발자 아빠 블로그](https://dev-daddy.tistory.com/25)
--   
 - [마기의 개발 블로그](https://magi82.github.io/ios-rxswift-01/)

@@ -100,4 +100,12 @@
 >    .observeOn(Schedulers.io())            // Observer will run on parameter thread.   (default main)
 >    .subscribe(observer);                  // Subscribe the observer</code></pre>
 
+### 참고
+> - [리액티브 프로그래밍이란?](https://dev-daddy.tistory.com/25)
+> - [RxJava를 사용해서 안드로이드 앱 만들기](https://dev-daddy.tistory.com/26)
+> - [2. 스케쥴러 이해하기](https://tiii.tistory.com/18)
+> - []()
+
+
+
 

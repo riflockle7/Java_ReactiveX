@@ -39,7 +39,8 @@ public class _01_Single_RxFlower {
 
         // Observable -> Array
         String[] names = {"Thomas", "Tom", "Tommy"};
-        Observable.fromArray(names)
+        String[] empty = {};
+        Observable.fromArray(empty)
                 .first("TTT")
                 .subscribe(System.out::println);
 

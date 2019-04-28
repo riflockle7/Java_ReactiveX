@@ -40,7 +40,6 @@ public class _01_Just_RxFlower {
             public void onComplete() {
                 System.out.println("onComplete() execute Thread is " + Thread.currentThread().getName());
                 System.out.println("다 끝났다.");
-
             }
         };
 

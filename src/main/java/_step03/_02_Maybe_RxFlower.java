@@ -8,10 +8,10 @@ import io.reactivex.disposables.Disposable;
 
 public class _02_Maybe_RxFlower {
     public static void main(String[] args) {
-        // 1. 기본 사용
         //Some Emission
         Maybe<String> singleSource = Maybe.just("single item");
 
+        // example1
         singleSource.subscribe(new MaybeObserver<String>() {
                                    @Override
                                    public void onSubscribe(Disposable d) {
@@ -20,7 +20,7 @@ public class _02_Maybe_RxFlower {
 
                                    @Override
                                    public void onSuccess(String s) {
-                                       System.out.println("Item received: from singleSource " + s);
+                                       System.out.println("Item received: from singleSource : (" + s + ")");
                                    }
 
                                    @Override
@@ -30,25 +30,27 @@ public class _02_Maybe_RxFlower {
 
                                    @Override
                                    public void onComplete() {
-                                       System.out.println("Done from SingleSource");
+                                       System.out.println("Done from SingleSource, No items.");
                                    }
                                }
         );
 
+        // example2
+        // 위 예제와 똑같이 동작한다.
         singleSource.subscribe(
-                s -> System.out.println("Item received: from singleSource " + s),
+                s -> System.out.println("Item received: from singleSource : (" + s + ")"),
                 Throwable::printStackTrace,
-                () -> System.out.println("Done from SingleSource")
+                () -> System.out.println("Done from SingleSource, No items.")
         );
 
-        //no emission
+        // No Emission
+        // example
         Maybe<Integer> emptySource = Maybe.empty();
 
         emptySource.subscribe(
                 s -> System.out.println("Item received: from emptySource" + s),
                 Throwable::printStackTrace,
-                () -> System.out.println("Done from EmptySource")
+                () -> System.out.println("Done from EmptySource, No items.")
         );
-
     }
 }
